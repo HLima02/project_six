@@ -1,0 +1,406 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: arial, sans-serif;
+	min-width: 320px;
+}
+
+img{
+	display: block;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.content{
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* _________________ Cabecalho ________________ */
+header{
+	background: rgba(0,0,0,0.8);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 10px;
+
+}
+
+#titulo_pag h1{
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#titulo_pag span{
+	font-size: 17px;
+	color: #A4A4A4;
+}
+
+nav{
+	display: flex;
+}
+
+nav a{
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	padding: 10px 10px;
+	margin-right: 10px;
+}
+
+#btn_menu{
+	margin-right: 10px;
+	display: none;
+}
+
+#btn_menu div{
+	width: 40px;
+	height: 2px;
+	background: #fff;
+	margin: 3px 0;
+}
+
+.btn_close{
+	display: none;
+}
+
+/* ________________ Banner _________________ */
+#banner{
+	background: linear-gradient(60deg, #070719, #0B0B3B);
+	color: #fff;
+	padding: 150px 50px;
+}
+
+#banner h2{
+	width: 70%;
+	font-size: 30px;
+	text-align: center;
+	line-height: 40px;
+	margin: 10px auto;
+}
+
+#banner h2:after{
+	content: "|";
+	color: #fff;
+	margin-left: 5px;
+	animation: cursor .7s infinite;
+}
+
+@keyframes cursor{
+	0%, 100%{
+		opacity: 1;
+	}
+
+	50%{
+		opacity: 0;
+	}
+}
+
+
+/*___________________ Seção 01 _________________*/
+#sec01_cont{
+	padding: 60px 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.b_sec01{
+	width: 30%;
+	line-height: 25px;
+	padding-bottom: 30px;
+}
+
+.b_sec01:nth-child(2){
+	border-right: 1px solid #6E6E6E;
+	border-left: 1px solid #6E6E6E;
+	padding: 0 20px;
+	padding-bottom: 30px;
+}
+
+.b_sec01 h3{
+	color: #0040FF;
+	font-size: 22px;
+	height: 30%;
+	padding-bottom: 20px;
+}
+
+.b_sec01 p{
+	font-size: 14px;
+	color: #6E6E6E;
+	height: 65%;
+	padding-bottom: 20px; 
+}
+
+.b_sec01 button{
+	color: #fff;
+	background: #0040FF;
+	border-radius: 10px;
+	border: none;
+	padding: 10px 20px;
+}
+
+/*___________________ Slider _________________*/
+#section_02{
+	background: #0040FF;
+	padding: 30px 0;
+	margin-top: 50px;
+}
+
+#slideshow{
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+}
+
+.mySlide{
+	display: none;
+}
+
+.prev, .next{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next{
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+	background: rgba(0,0,0,0.8);
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+
+
+/*___________________ Seção 03 _________________*/
+#section_03{
+	background: #E6E6E6;
+	padding: 80px 30px;
+}
+
+#sec03_cont{
+	background: #fff;
+	color: #6E6E6E;
+	text-align: center;
+	padding: 80px 10px;
+}
+
+#sec03_cont span{
+	font-size: 40px;
+	margin-bottom: 40px;
+	border-radius: 50%;
+	border: 2px solid #E6E6E6;
+	padding: 30px;
+}
+
+#sec03_txt{
+	padding: 0 30px;
+	width: 60%;
+	margin: 0 auto;
+}
+
+#sec03_txt h4{
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+#sec03_txt p{
+	line-height: 25px;
+}
+
+#sec03_btn button{
+	padding: 10px 30px;
+	font-size: 20px;
+	margin-top: 30px;
+	border-radius: 5px;
+	background: transparent;
+	border: 2px solid #6E6E6E;
+}
+
+/*___________________ Seção 04 _________________*/
+
+
+#section_04{
+	background: rgba(0,0,0,0.8);
+	padding: 80px 30px;
+}
+
+#sec04_tittle{
+	text-align: center;
+	margin-bottom: 60px;
+	color: #fff;
+}
+
+#sec04_tittle h4{
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+
+#galeria{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gal_div{
+	width: 25%;
+}
+
+
+/*___________________ Rodape _________________*/
+footer{
+	/*background: #E6E6E6*/
+	padding: 80px 30px;
+	text-align: center;
+	color: #848484;
+}
+
+#rodape_txt{
+	margin-bottom: 40px;
+}
+
+#rodape_txt h4{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+#redes_sociais{
+	display: flex;
+	justify-content: center;
+}
+
+#redes_sociais a {
+	display: flex;
+	color: #fff;
+	background: #848484;
+	width: 40px;
+	height: 40px;
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+#redes_sociais a:hover{
+	background: rgba(0,0,0,0.8);
+}
+
+#rodape_bar{
+	width: 200px;
+	height: 2px;
+	background: #848484;
+	margin: 40px auto;
+}
+
+#direitos{
+	font-size: 15px;
+}
+
+#direitos a{
+	color: #848484;
+	text-decoration: none;
+}
+
+/* __________________ Design Responsivo _________________________ */
+@media only screen and (max-width: 800px){
+	#titulo_pag h1{
+		font-size: 25px;
+	}
+
+	#titulo_pag span{
+		font-size: 14px;
+	}
+
+	nav a{
+		font-size: 15px;
+		margin-right: 5px;
+	}
+
+	#sec01_cont{
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.b_sec01{
+		width: 80%;
+	}
+
+	.b_sec01:nth-child(2){
+		border: none;
+		margin: 40px 0;
+	}
+
+	.gal_div{
+		width: 50%;
+	}
+}
+
+@media only screen and (max-width: 650px){
+	nav{
+		position: fixed;
+		right: -250px;
+		top: 0;
+		width: 200px;
+		height: 100%;
+		flex-direction: column;
+		background: rgba(0,0,0,0.9);
+		padding: 30px 10px;	
+		transition: 1s;
+	}
+
+	.bord{
+		border-bottom: 1px solid #fff;
+		padding-bottom: 20px;
+	}
+
+	.btn_close{
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		cursor: pointer;
+	}
+
+	#btn_menu{
+		display: block;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	#banner{
+		padding: 60px 10px;
+	}
+
+	#banner h2{
+		width: 100%;
+	}
+
+	.gal_div{
+		width: 100%;
+	}
+}
